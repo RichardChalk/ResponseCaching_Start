@@ -1,10 +1,32 @@
 ﻿@page
 @model PrivacyModel
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Denna sida har Response Caching på 30 sekunder numera";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<h2>Efter att man har aktiverat Response Caching...</h2>
 
-@DateTime.Now
+<p>Titta på klockslaget nedanför....</p>
+<p>Den uppdateras <span style="color:red;font-weight:700">INTE</span> varje gång man klickar på Privacy länken längre</p>
+<p>Numera uppdateras den endast var 30:e sekund</p>
+<br />
+<div style="color:red;font-weight:700">
+    @DateTime.Now
+</div>
+
+<br />
+<p>OBS: Vad händer om man klickar i url fönstret istället för att klicka på 'Privacy' länken?</p>
+
+<br />
+
+<p>
+    <span style="color:green;font-weight:700">VIKTIGT!</span>
+</p>
+
+<p>
+    <span style="font-weight:700">Response Caching</span> funkar endast när användaren klicka på en länk på webbsidan.
+</p>
+    Om man skriver in en url istället för att klicka på en länk funkar det <span style="color:red;font-weight:700">inte!</span>
+
+
